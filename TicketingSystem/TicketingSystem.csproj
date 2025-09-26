@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TicketingSystem.Data\TicketingSystem.Data.csproj" />
+    <ProjectReference Include="..\TicketingSystem.Infrastructure\TicketingSystem.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

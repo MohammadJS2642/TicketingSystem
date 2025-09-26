@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using TicketingSystem.Data.Models;
 
-namespace TicketingSystem.Data;
+namespace TicketingSystem.Infrastructure;
 
 public static class SeedData
 {

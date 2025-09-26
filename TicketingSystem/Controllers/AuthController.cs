@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using TicketingSystem.Data;
 using TicketingSystem.Data.DTO;
 using TicketingSystem.Data.Models;
+using TicketingSystem.Infrastructure;
 
 namespace TicketingSystem.Controllers;
 

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using TicketingSystem.Data;
+using TicketingSystem.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

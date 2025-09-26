@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using TicketingSystem.Application.Interfacces;
+using TicketingSystem.Application.Services;
 using TicketingSystem.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,9 +19,13 @@ builder.Services.AddDbContext<AppDbContext>(
     }
 );
 
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddTransient<IAuthService, AuthService>();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Ticketing System", Version = "v1" });

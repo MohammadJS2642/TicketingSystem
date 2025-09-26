@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using TicketingSystem.Data.DTO;
+using TicketingSystem.Application.DTO;
 using TicketingSystem.Data.Models;
 using TicketingSystem.Infrastructure;
 

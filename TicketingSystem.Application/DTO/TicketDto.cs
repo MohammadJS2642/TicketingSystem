@@ -1,6 +1,6 @@
 ﻿using TicketingSystem.Data.Models;
 
-namespace TicketingSystem.Data.DTO;
+namespace TicketingSystem.Application.DTO;
 
 public record CreateTicketDto(string Title, string? Description, TicketPriority Priority = TicketPriority.Low);
 

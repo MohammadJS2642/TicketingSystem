@@ -24,7 +24,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddTransient<IAuthService, AuthService>();
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -75,6 +74,9 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddAuthorization();
+
+builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddTransient<ITicketService, TicketService>();
 
 var app = builder.Build();
 

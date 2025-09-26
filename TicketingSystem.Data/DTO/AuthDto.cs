@@ -1,4 +1,4 @@
 ﻿namespace TicketingSystem.Data.DTO;
 
-public record LoginRequest(string email, string password);
-public record LoginResponse(string token, string tokenType = "Bearer");
+public record LoginRequest(string Email, string Password);
+public record LoginResponse(string Token, string TokenType = "Bearer");

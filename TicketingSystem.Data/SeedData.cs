@@ -24,7 +24,7 @@ public static class SeedData
         {
             Fullname = "Employee",
             Email = "employee@gmail.com",
-            Role = Role.User
+            Role = Role.Employee
         };
         employee.PasswordHash = hash.HashPassword(employee, "Employee@123");
 

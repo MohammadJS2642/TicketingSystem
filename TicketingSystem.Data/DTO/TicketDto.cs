@@ -2,7 +2,7 @@
 
 namespace TicketingSystem.Data.DTO;
 
-public record CreateTicketDto(string title, string? description, TicketPriority Priority = TicketPriority.Low);
+public record CreateTicketDto(string Title, string? Description, TicketPriority Priority = TicketPriority.Low);
 
 public record UpdateTicketDto(TicketStatus TicketStatus, Guid? AssignedToUserId);
 
